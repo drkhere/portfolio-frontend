@@ -1,0 +1,40 @@
+<!-- <div id="my-projects">
+    <p class="top-primary">Projects</p>
+    <div class="project-section">
+        <div class="pro">
+            <img src="assets/images/project1.png" alt="Project1">
+            <div class="content">
+                <p class="h-secondary hide">Netflix Clone</p>
+                <p class="p-secondary show">It is a clone website fully made by my knowledge, Purely made by html
+                    css and js, It is fully responsive in any smartphones<br><a
+                        href="https://github.com/drkhere/Netflix-clone">click to view</a></p>
+            </div>
+        </div>
+        <div class="pro">
+            <img src="assets/images/project1.png" alt="Project1">
+            <div class="content">
+                <p class="h-secondary hide">Netflix Clone</p>
+                <p class="p-secondary show">It is a clone website fully made by my knowledge, Purely made by html
+                    css and js, It is fully responsive in any smartphones<br><a
+                        href="https://github.com/drkhere/Netflix-clone">click to view</a></p>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div id="my-projects">
+    <p class="top-primary">Projects</p>
+    <div class="project-section">
+      <div class="pro" *ngFor="let project of projects">
+        <img [src]="project.image" [alt]="project.title" />
+        <div class="content">
+          <p class="h-secondary hide">{{ project.title }}</p>
+          <p class="p-secondary show">
+            {{ project.description }}<br />
+            <a [href]="project.link" target="_blank">click to view</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

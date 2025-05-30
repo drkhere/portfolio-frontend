@@ -1,0 +1,17 @@
+[
+    {
+      "title": "Weather App",
+      "tech": ["Angular", "OpenWeatherMap API"],
+      "description": "A real-time weather forecast app.",
+      "repo": "https://github.com/yourname/weather-app",
+      "demo": "https://weather.yoursite.com"
+    },
+    {
+      "title": "Task Manager",
+      "tech": ["Angular", "Firebase"],
+      "description": "Manage your daily tasks efficiently.",
+      "repo": "https://github.com/yourname/task-manager",
+      "demo": "https://tasks.yoursite.com"
+    }
+  ]
+  

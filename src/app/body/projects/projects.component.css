@@ -1,0 +1,158 @@
+#my-projects {
+    position: relative;
+    /* height: 795px; */
+    height: 600px;
+    flex-direction: column;
+    display: flex;
+    padding: 20px 120px;
+    align-items: center;
+}
+
+#my-projects::before {
+    content: '';
+    position: absolute;
+    background-color: #090921;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+.project-section {
+    width: 100%;
+    align-items: center;
+    /* justify-content: center; */
+    height: 100%;
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    flex-direction: row;
+
+}
+
+#my-projects .pro {
+    /* overflow: hidden; */
+    border-radius: 200px;
+        border-radius: 20px; 
+    overflow: hidden;   
+    margin: 45px;
+    height: 240px;
+    width: 415px;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pro img {
+    height: 196px;
+    transition: height 0.9s ease;
+}
+
+.pro .content {
+    overflow: hidden;
+    /* padding: 10px; */
+    height: 100%;
+    background-color: #2a2a29;
+    opacity: 5;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    transition: height 1s, padding 1s;
+    height: 100%;
+    width: 415px;
+
+}
+
+#my-projects .pro:hover img {
+    height: 0;
+}
+
+#my-projects .pro:hover .content {
+    padding-top: 35px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+    width: 415px;
+}
+
+.content p a {
+    border-radius: 12px;
+    color: #3babd6;
+    margin: 4px;
+    padding: 7px 14px;
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+
+@media screen and (max-width:784px) {
+
+    #my-projects {
+        height: 740px;
+        padding: 0px 45px;
+    }
+
+    .project-section {
+        flex-direction: column;
+    }
+
+    #my-projects .pro {
+        height: 225px;
+        width: 345px;
+        margin: 15px 0px;
+    }
+
+    .pro img {
+        height: 190px;
+    }
+
+    .pro .content{
+        width: 100%;
+    }
+
+    #my-projects .pro:hover .content {
+        width: 100%;
+        /* justify-content: center; */
+
+    }
+}
+
+@media screen and (max-width:425px) {
+    #my-projects .pro {
+        width: 245px;
+        height: 156px;
+        margin-bottom: 50px;
+
+    }
+
+    #my-projects .pro:hover .content {
+    padding-top: 35px;
+    padding-right: 4px;
+    padding-left: 4px;
+    padding-bottom: 50px;
+    width: 415px;
+}
+
+    .pro img {
+        width: 100%;
+    }
+
+    .pro .content{
+        padding-top: 0px;
+        width: 100%;
+    }
+
+    #my-projects {
+        height: auto;
+    }
+
+    #my-projects .pro:hover .content {
+        padding-top: 0px;
+        width: 100%;
+        /* justify-content: center; */
+
+    }
+}

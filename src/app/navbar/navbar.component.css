@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Serif+Display&display=swap');
+
+
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bree Serif', serif;
+    font-family: 'DM Serif Display', serif;
+}
+
+.logo {
+    font-size: 40px;
+    color: white;
+}
+
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* position: fixed; */
+    z-index: 2;
+}
+
+#navbar::before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#navbar ul {
+    margin-left: 25%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+/* #navbar ul>ul {
+    margin-left: 25%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+} */
+
+#navbar ul li {
+
+    list-style: none;
+}
+
+#navbar ul li a {
+
+    border-radius: 12px;
+    color: white;
+    margin: 4px;
+    padding: 7px 14px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: background 0.5s;
+}
+
+#navbar ul li a:hover {
+    background: white;
+    color: black;
+
+}
+
+@media screen and (max-width:784px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: center;
+    }
+
+    #navbar ul>ul {
+        display: block;
+        border: 2px solid white;
+        position: absolute;
+        right: 4px;
+        top: 40px;
+        height: 112px;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #navbar ul>ul li a {
+        margin: 4px;
+        font-size: 1.2rem;
+        padding: 0px 8px;
+    }
+
+    #navbar ul .v-class-res {
+        display: none;
+    }
+
+    #navbar .burger {
+        position: absolute;
+        right: 60px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40px;
+        margin-right: 5px;
+        align-items: center;
+    }
+
+    #navbar .logo {
+        position: absolute;
+        left: 60px;
+    }
+
+    #navbar .burger .line {
+        margin: 2px;
+        border-radius: 8px;
+        width: 37px;
+        height: 7px;
+        background-color: white;
+    }
+
+    #navbar ul>ul {
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width:425px) {
+
+    #navbar .logo {
+        left: 20px;
+    }
+
+    #navbar .burger {
+        right: 20px;
+    }
+}
