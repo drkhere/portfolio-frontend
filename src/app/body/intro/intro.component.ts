@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class IntroComponent {
   downloadResume() {
     const link = document.createElement('a');
-    link.href = 'assets/resume.pdf';  // adjust path if needed
+    link.href = 'assets/myresume.pdf';  // adjust path if needed
     link.download = 'Dayal-Resume.pdf';  // file name user will see
     link.click();
   }
