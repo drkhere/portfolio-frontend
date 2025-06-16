@@ -36,7 +36,7 @@
     /* overflow: hidden; */
     border-radius: 200px;
         border-radius: 20px; 
-    overflow: hidden;   
+    /* overflow: hidden;    */
     margin: 45px;
     height: 240px;
     width: 415px;
@@ -97,16 +97,18 @@
 
     .project-section {
         flex-direction: column;
+        margin-bottom: 20px;
+
     }
 
     #my-projects .pro {
-        height: 225px;
+        height: 200px;
         width: 345px;
         margin: 15px 0px;
     }
 
     .pro img {
-        height: 190px;
+        height: 80%;
     }
 
     .pro .content{
@@ -121,6 +123,11 @@
 }
 
 @media screen and (max-width:425px) {
+
+    #my-projects{
+        height: 470px;
+    }
+
     #my-projects .pro {
         width: 245px;
         height: 156px;
@@ -145,14 +152,15 @@
         width: 100%;
     }
 
-    #my-projects {
-        height: auto;
-    }
 
     #my-projects .pro:hover .content {
         padding-top: 0px;
         width: 100%;
         /* justify-content: center; */
 
+    }
+
+    .project-section{
+        margin-top: 10px;
     }
 }
